@@ -1,32 +1,35 @@
-	
-public class Assignment4 {
+/*
+ Brandon Gerber 
+ COP1250C
+ 11/12/2023
+ Practicing methods
+ */
+package methodpractice;
+
+public class methodpractice {
     // number 1
-    // Write and test the following method that calculates and returns the area of a rectangle.
-    // public static float rectangleArea(float, float);
+    // calculate and return the area of a rectangle.
+    // Return Type: float
+    // Parameters: double length, double width
     public static float rectangleArea(double length, double width) {
-        double area = 0;
-        area = (length * width);
+        double area = length * width;
         float result = (float) area;
-        return (float) result;
+        return result;
     }
 
     // number 2
-    // Write and test the following method that determines whether a given number is even.
-    // If it is even, return true, if it is odd, return false.
-    // public static boolean isEven(int);
+    // determine whether a given number is even.
+    // If even, returns true; if odd, returns false.
+    // Return Type: boolean
+    // Parameters: int num
     public static boolean isEven(int num) {
-        if (num % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return num % 2 == 0;
     }
 
     // number 3
-    // Write and test the following method that accepts two integer parameters, i and j,
-    // and then returns the sum of the numbers from i to j.
-    // For example, sum(3,6) = 3 + 4 + 5 + 6 = 18
-    // public static int sum(int, int);
+    // calculate the sum of numbers from i to j.
+    // Return Type: int
+    // Parameters: int i, int j
     public static int sum(int i, int j) {
         int total = 0;
         for (int n = i; n <= j; n++) {
@@ -36,9 +39,9 @@ public class Assignment4 {
     }
 
     // number 4
-    // Write and test the following method that determines accepts an integer value n
-    // and returns the sum of the first n natural numbers.
-    // public static int sumN(int);
+    // Method to calculate the sum of the first n natural numbers.
+    // Return Type: int
+    // Parameters: int n
     public static int sumN(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -48,9 +51,9 @@ public class Assignment4 {
     }
 
     // number 5
-    // Write and test the following method that accepts an integer value n
-    // and displays n lines of 5 stars each.
-    // public static void printNLines(int);
+    // print n lines, each containing 5 stars.
+    // Return Type: void
+    // Parameters: int n
     public static void printNLines(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < 5; j++) {
